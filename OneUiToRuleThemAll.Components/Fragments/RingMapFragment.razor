@@ -1,5 +1,7 @@
-﻿<div class="ring-map @Class" @attributes=Attributes>
-
+﻿<div class="ring-map position-relative @Class" @attributes=Attributes>
+    <img src="_content/@(Constants.Namespace)/middle-earth.jpg" class="w-100 h-100" />
+    <img src="_content/@(Constants.Namespace)/ring.png" width="100" class="position-absolute"
+         style="margin-left: -50px;margin-top: -50px;left: @(PositionX*100)%; top: @(PositionY*100)%;background:rgba(0,0,0,.8); border:6px solid black; border-radius:50%; padding: 5px;" />
 </div>
 
 @code {
@@ -12,7 +14,7 @@
 
     [Parameter]
     public float PositionX { get; set; }
-    
+
     [Parameter]
     public float PositionY { get; set; }
 }

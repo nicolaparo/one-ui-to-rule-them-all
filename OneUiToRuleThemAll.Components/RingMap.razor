@@ -1,0 +1,21 @@
+@using OneUiToRuleThemAll.Abstractions
+@using OneUiToRuleThemAll.Abstractions.Models
+@using OneUiToRuleThemAll.Components
+@using OneUiToRuleThemAll.Components.Fragments
+
+
+@inject IRingLocatorService ringLocatorSerivce
+
+@if (ringLocation is not null)
+{
+    <RingMapFragment PositionX="ringLocation.X" PositionY="ringLocation.Y" />
+}
+
+@code {
+    private Location ringLocation = null!;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        ringLocation = await ringLocatorSerivce.LocateRingAsync();
+    }
+}

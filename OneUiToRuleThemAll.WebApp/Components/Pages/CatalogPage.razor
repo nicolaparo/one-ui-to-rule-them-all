@@ -1,0 +1,26 @@
+﻿@using OneUiToRuleThemAll.Abstractions.Models
+@inject ICatalogService catalogService
+
+@if (catalogItems is not null)
+{
+    @foreach (var catalogItem in catalogItems)
+    {
+        <div class="col">
+            @catalogItem.Name
+            @catalogItem.Price
+            @catalogItem.Description
+        </div>
+    }
+}
+
+
+@code {
+
+    private IEnumerable<Product>? catalogItems;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        catalogItems = await catalogService.GetProductsAsync();
+    }
+
+}

@@ -1,4 +1,7 @@
+using OneUiToRuleThemAll.Abstractions;
+using OneUiToRuleThemAll.Services;
 using OneUiToRuleThemAll.WebApp.Components;
+using OneUiToRuleThemAll.WebApp.Components.Pages;
 
 namespace OneUiToRuleThemAll.WebApp
 {
@@ -11,6 +14,9 @@ namespace OneUiToRuleThemAll.WebApp
             // Add services to the container.
             builder.Services.AddRazorComponents()
                 .AddInteractiveServerComponents();
+
+            builder.Services.AddSingleton<IRingLocatorService, RingLocatorService>();
+            builder.Services.AddSingleton<ICatalogService, CatalogService>();
 
             var app = builder.Build();
 

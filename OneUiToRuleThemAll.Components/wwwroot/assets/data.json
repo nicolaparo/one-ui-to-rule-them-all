@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Spade dei Nazgûl",
+        "description": "Forgiati con il fuoco dell'Orodruin (Monte Fato), le spade dei Nazgûl sono armi nere e terrificanti, in grado di infliggere ferite spirituali oltre a quelle fisiche.",
+        "image": "nazgul-swords",
+        "price": 1000
+    },
+    {
+        "name": "Mazze Chiodate",
+        "description": "Grossi bastoni o mazze incisi con punte metalliche, usati per infliggere danni contundenti e terrorizzare i nemici.",
+        "image": "spiked-maces",
+        "price": 800
+    },
+    {
+        "name": "Archi Oscuri",
+        "description": "Fatti con materiali tenebrosi e magici, gli archi dell'esercito di Sauron possono sparare frecce avvelenate o maledette, causando danni letali e corrompendo le menti dei nemici.",
+        "image": "dark-bows",
+        "price": 1200
+    },
+    {
+        "name": "Scudi Incisi",
+        "description": "Scudi di ferro o acciaio incisi con rune oscure e simboli maligni, che offrono protezione ai soldati di Sauron e diffondono paura tra i loro avversari.",
+        "image": "engraved-shields",
+        "price": 1500
+    },
+    {
+        "name": "Lame Incantate",
+        "description": "Spade o coltelli incantati con magia oscura, capaci di infliggere ferite che non guariscono facilmente e corrompere coloro che vengono feriti da esse.",
+        "image": "enchanted-blades",
+        "price": 1800
+    },
+    {
+        "name": "Lanciarazzi Orchi",
+        "description": "Un'arma primitiva ma efficace, i lanciarazzi orchi sparano proiettili esplosivi o infuocati per seminare distruzione tra le file nemiche.",
+        "image": "orc-rocket-launchers",
+        "price": 1000
+    },
+    {
+        "name": "Lanciagrumi Troll",
+        "description": "Armi enormi, manovrate dai potenti Troll di Mordor, che lanciano enormi massi o proiettili incendiari contro le fortezze nemiche.",
+        "image": "troll-stone-throwers",
+        "price": 2000
+    },
+    {
+        "name": "Armi di Fuoco di Mordor",
+        "description": "Sebbene la tecnologia sia limitata nell'universo di Tolkien, potrebbero essere presenti armi primitive simili a cannoni o catapulte che sparano proiettili incendiari o esplosivi.",
+        "image": "mordor-firearms",
+        "price": 2500
+    }
+]
