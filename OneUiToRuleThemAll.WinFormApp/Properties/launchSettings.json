@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "OneUiToRuleThemAll.WinFormApp": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:39204;http://localhost:39205"
+    }
+  }
+}
