@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
+using OneUiToRuleThemAll.Abstractions;
+using OneUiToRuleThemAll.Services;
 
 namespace OneUiToRuleThemAll.MauiHybridApp
 {
@@ -15,9 +17,11 @@ namespace OneUiToRuleThemAll.MauiHybridApp
                 });
 
             builder.Services.AddMauiBlazorWebView();
+            builder.Services.AddSingleton<IRingLocatorService, RingLocatorService>();
+            builder.Services.AddSingleton<ICatalogService, CatalogService>();
 
 #if DEBUG
-    		builder.Services.AddBlazorWebViewDeveloperTools();
+            builder.Services.AddBlazorWebViewDeveloperTools();
     		builder.Logging.AddDebug();
 #endif
 
