@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneUiToRuleThemAll.Services
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneUiToRuleThemAll.Abstractions", "OneUiToRuleThemAll.Abstractions\OneUiToRuleThemAll.Abstractions.csproj", "{05242093-DF9B-4271-B346-978C0BFFB442}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneUiToRuleThemAll.MauiApp", "OneUiToRuleThemAll.MauiApp\OneUiToRuleThemAll.MauiApp.csproj", "{E666D77C-B3FE-4DEF-A6A2-0679D2D05AF5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneUiToRuleThemAll.MauiHybridApp", "OneUiToRuleThemAll.MauiHybridApp\OneUiToRuleThemAll.MauiHybridApp.csproj", "{E3FC198E-168D-4000-829A-BE9662A04AF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,12 +41,12 @@ Global
 		{05242093-DF9B-4271-B346-978C0BFFB442}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05242093-DF9B-4271-B346-978C0BFFB442}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05242093-DF9B-4271-B346-978C0BFFB442}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E666D77C-B3FE-4DEF-A6A2-0679D2D05AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E666D77C-B3FE-4DEF-A6A2-0679D2D05AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E666D77C-B3FE-4DEF-A6A2-0679D2D05AF5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{E666D77C-B3FE-4DEF-A6A2-0679D2D05AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E666D77C-B3FE-4DEF-A6A2-0679D2D05AF5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E666D77C-B3FE-4DEF-A6A2-0679D2D05AF5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E3FC198E-168D-4000-829A-BE9662A04AF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3FC198E-168D-4000-829A-BE9662A04AF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3FC198E-168D-4000-829A-BE9662A04AF3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E3FC198E-168D-4000-829A-BE9662A04AF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3FC198E-168D-4000-829A-BE9662A04AF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3FC198E-168D-4000-829A-BE9662A04AF3}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

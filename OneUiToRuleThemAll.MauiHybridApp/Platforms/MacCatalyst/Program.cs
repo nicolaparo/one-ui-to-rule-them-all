@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace OneUiToRuleThemAll.MauiApp
+namespace OneUiToRuleThemAll.MauiHybridApp
 {
     public class Program
     {

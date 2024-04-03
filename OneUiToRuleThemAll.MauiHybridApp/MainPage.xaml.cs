@@ -1,4 +1,4 @@
-﻿namespace OneUiToRuleThemAll.MauiApp
+﻿namespace OneUiToRuleThemAll.MauiHybridApp
 {
     public partial class MainPage : ContentPage
     {

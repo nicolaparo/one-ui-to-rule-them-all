@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace OneUiToRuleThemAll.MauiApp
+namespace OneUiToRuleThemAll.MauiHybridApp
 {
     public static class MauiProgram
     {

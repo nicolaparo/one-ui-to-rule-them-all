@@ -2,7 +2,7 @@ using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 using System;
 
-namespace OneUiToRuleThemAll.MauiApp
+namespace OneUiToRuleThemAll.MauiHybridApp
 {
     internal class Program : MauiApplication
     {

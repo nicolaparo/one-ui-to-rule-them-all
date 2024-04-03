@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace OneUiToRuleThemAll.MauiApp
+namespace OneUiToRuleThemAll.MauiHybridApp
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

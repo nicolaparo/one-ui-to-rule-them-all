@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace OneUiToRuleThemAll.MauiApp
+namespace OneUiToRuleThemAll.MauiHybridApp
 {
     [Application]
     public class MainApplication : MauiApplication
