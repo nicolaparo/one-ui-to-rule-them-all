@@ -1,0 +1,29 @@
+﻿@using OneUiToRuleThemAll.Abstractions.Models
+
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">@Product.Name</h5>
+    </div>
+    <div style='height: 200px; background-image:url(@(GetImageUrl(Product.Image))); background-size: cover; background-position: center;' class="product-image">
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+            @Product.Description
+        </p>
+    </div>
+    <div class="card-footer">
+        <span class="h6">@Product.Price Gold Coins</span>
+        <button class="btn btn-primary float-end">Order Now</button>
+    </div>
+</div>
+
+@code {
+
+    [Parameter]
+    public Product Product { get; set; }
+
+    private string GetImageUrl(string image)
+    {
+        return $"/_content/{Constants.Namespace}/assets/{image}.jfif";
+    }
+}

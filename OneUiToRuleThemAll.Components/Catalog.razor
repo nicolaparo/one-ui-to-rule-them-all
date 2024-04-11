@@ -1,0 +1,27 @@
+@using OneUiToRuleThemAll.Abstractions
+@using OneUiToRuleThemAll.Abstractions.Models
+@using OneUiToRuleThemAll.Components
+@using OneUiToRuleThemAll.Components.Fragments
+
+@inject ICatalogService catalogService
+
+<div class="row">
+    @if (products is not null)
+    {
+        @foreach (var product in products)
+        {
+            <div class="col-4">
+                <ProductFragment Product="product" />
+            </div>
+        }
+    }
+</div>
+
+@code {
+    private IEnumerable<Product>? products = null;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        products = await catalogService.GetProductsAsync();
+    }
+}
