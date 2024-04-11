@@ -1,0 +1,81 @@
+﻿@page "/production"
+
+@using Humanizer
+
+<h3>Production</h3>
+
+<div class="progress mb-3">
+    <div class="progress-bar bg-danger" role="progressbar" style="width: 25%;"></div>
+</div>
+
+<div class="row mb-3">
+
+    <div class="col">
+        <div class="card border-success">
+            <div class="card-body">
+                <div class="card-title h2">@Random.Shared.Next(50, 100)</div>
+                <p class="card-text">
+                    Days of Delay
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card border-success">
+            <div class="card-body">
+                <div class="card-title h2">@((IssuesHistory.Keys.Max() - DateTimeOffset.Now).Humanize())</div>
+                <p class="card-text">
+                    Without Incidents
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<h4>Issues</h4>
+<table class="table">
+    <tr>
+        <th>Date</th>
+        <th>Severity</th>
+        <th>Description</th>
+    </tr>
+    @foreach (var issue in IssuesHistory.OrderByDescending(i => i.Key))
+    {
+        <tr>
+            <td>
+                @issue.Key
+            </td>
+            <td>
+                <span class="badge bg-@(issue.Value.Severity)">@(issue.Value.Severity)</span>
+            </td>
+            <td>
+                @issue.Value.Description
+            </td>
+        </tr>
+    }
+</table>
+
+
+@code {
+
+    private record ProductionIssue(string Severity, string Description);
+
+    private static readonly List<ProductionIssue> Issues = [
+      new("danger", "Malfunctioning of the Power Ring, causing a total production shutdown."),
+      new("warning", "Breakdown of the forges of Mordor, significantly slowing down the production of weapons and armor."),
+      new("danger", "Loss of black material, requiring an evacuation of the production area and thorough cleaning."),
+      new("warning", "Defects in the magical metals supply chain, causing delays in the delivery of raw materials from Isengard."),
+      new("danger", "Incident with a Nazgûl at the workplace resulting in serious injuries, requiring intervention from elven healers and inspection by Kingdom authorities."),
+      new("warning", "Quality issues with the Dark Swords, leading to increased complaints from Orcs and a potential decrease in sales."),
+      new("danger", "Violation of Mordor regulations, resulting in the risk of fines from the Black Tower and damage to the company's reputation."),
+      new("warning", "Breakage of the lava river water pipes, causing damage to plant structures and interruptions in the use of water to cool the fire."),
+      new("danger", "Production slave strike, causing a complete halt of operations and significant financial losses for Sauron Industries."),
+      new("warning", "Unforeseen maintenance issues on equipment balrogs, leading to balrog downtime and delays in the production of dark weapons.")
+    ];
+
+
+    private Dictionary<DateTimeOffset, ProductionIssue> IssuesHistory = Issues.ToDictionary(i => DateTimeOffset.Now.AddHours(-Random.Shared.NextDouble() * 200), i => i);
+
+}
