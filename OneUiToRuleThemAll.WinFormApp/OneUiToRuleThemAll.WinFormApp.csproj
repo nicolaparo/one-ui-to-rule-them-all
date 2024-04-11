@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OneUiToRuleThemAll.Components\OneUiToRuleThemAll.Components.csproj" />
+    <ProjectReference Include="..\OneUiToRuleThemAll.Services\OneUiToRuleThemAll.Services.csproj" />
   </ItemGroup>
 
 </Project>

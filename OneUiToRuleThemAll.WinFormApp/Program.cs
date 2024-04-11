@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Components.WebView.WindowsForms;
 using Microsoft.Extensions.DependencyInjection;
+using OneUiToRuleThemAll.Abstractions;
+using OneUiToRuleThemAll.Services;
 using System.Collections.Immutable;
 
 namespace OneUiToRuleThemAll.WinFormApp
@@ -10,6 +12,9 @@ namespace OneUiToRuleThemAll.WinFormApp
         static void Main()
         {
             var services = new ServiceCollection();
+
+            services.AddSingleton<IRingLocatorService, RingLocatorService>();
+            services.AddSingleton<ICatalogService, CatalogService>();
 
             services.AddSingleton<ApplicationWindow>();
             services.AddWindowsFormsBlazorWebView();

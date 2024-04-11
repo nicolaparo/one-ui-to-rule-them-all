@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Components.WebView.WindowsForms;
+using OneUiToRuleThemAll.WinFormApp.Components;
 using System.Collections.Immutable;
 using System.ComponentModel;
 
@@ -13,7 +14,7 @@ namespace OneUiToRuleThemAll.WinFormApp
 
             blazor.Services = serviceProvider;
             blazor.HostPage = @"wwwroot/index.html";
-            blazor.RootComponents.Add(new RootComponent(@"#app", typeof(ApplicationView), ImmutableDictionary<string, object?>.Empty));
+            blazor.RootComponents.Add(new RootComponent(@"#app", typeof(App), ImmutableDictionary<string, object?>.Empty));
 
             blazor.BlazorWebViewInitialized = (s, e) =>
             {
