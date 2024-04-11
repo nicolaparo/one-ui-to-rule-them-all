@@ -26,6 +26,18 @@ namespace OneUiToRuleThemAll.WinFormApp
             blazor.Dock = DockStyle.Fill;
             Controls.Add(blazor);
             Size = new Size(1600, 1200);
+
+            FormClosing += (s, e) =>
+            {
+                var result = MessageBox.Show("Did you inform Sauron you are closing this application? There might be severe consequences...", "Confirm", MessageBoxButtons.YesNo);
+
+                if (result != DialogResult.Yes)
+                {
+                    e.Cancel = true;
+                    MessageBox.Show("You better ask for his permission...");
+                }
+                    
+            };
         }
     }
 }
