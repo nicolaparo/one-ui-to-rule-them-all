@@ -69,4 +69,16 @@
       <ProjectReference Include="..\OneUiToRuleThemAll.Services\OneUiToRuleThemAll.Services.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Update="TodoPage.xaml.cs">
+        <DependentUpon>TodoPage.xaml</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <MauiXaml Update="TodoPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
+    </ItemGroup>
+
 </Project>
