@@ -22,8 +22,8 @@
             
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
-                        <Grid Padding="10">
+                    <ViewCell >
+                        <Grid Padding="10" HeightRequest="70">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="Auto" />
