@@ -12,5 +12,12 @@
             </BlazorWebView.RootComponents>
         </BlazorWebView>
     </ContentPage>
+    <ContentPage Title="Catalog">
+        <BlazorWebView x:Name="blazorWebView2" HostPage="wwwroot/index.html">
+            <BlazorWebView.RootComponents>
+                <RootComponent Selector="#app" ComponentType="{x:Type localPage:Catalog}" />
+            </BlazorWebView.RootComponents>
+        </BlazorWebView>
+    </ContentPage>
     <local:TodoPage Title="Todo"></local:TodoPage>
 </TabbedPage>

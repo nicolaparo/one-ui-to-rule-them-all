@@ -5,7 +5,7 @@
              x:Class="OneUiToRuleThemAll.MauiHybridApp.TodoPage"
              Title="TodoPage">
     <VerticalStackLayout>
-        <ListView>
+        <ListView RowHeight="80">
                 <ListView.ItemsSource>
                 <x:Array Type="{x:Type localCommon:Todo}">
                     <localCommon:Todo Name="Take the ring"  Description="my treasure"/>

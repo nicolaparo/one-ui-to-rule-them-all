@@ -11,7 +11,8 @@ namespace OneUiToRuleThemAll.MauiHybridApp.Services
     {
         public Task<Abstractions.Models.Location> LocateRingAsync()
         {
-            return Task.FromResult(new Abstractions.Models.Location { X = .1f, Y = .1f });
+            App.Current.MainPage.DisplayAlert("Alert", "Alert from Maui in a blazor Page", "OK");
+            return Task.FromResult(new Abstractions.Models.Location { X = .5f, Y = .5f });
         }
 
    
